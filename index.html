@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor API</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href='./assets/style.css'>
+</head>
+
+<body>
+    <div class="contenedor" style="margin-top: 5%;">
+        <div class="col-md-5-p-0">
+            <div class="card bg-secondary px-4 py-4 border-0 mb-0">
+                <div class="card-body">
+                    <div class="container-pri">
+                        <h1 class="heeading h2" id="test">Conversor de monedas</h1>
+                        <h1 class="heeading h3"> Pesos CLP </h1>
+                        <input type="text" id="ipt-clp" class="mb-4" placeholder="Ingrese el monto en CLP">
+                        <h1 class="heeading h4"> Moneda a convertir </h1>
+                        <select id="slt-moneda" style="margin-top: 2%;"></select>
+                        <button type="button" id="btn-buscar" class="btn btn-primary btn-icon-label m-4">
+                            <span  style="margin-top: 2%;"> Buscar </span>
+                            <span ><i class="fas fa-play"></i></span>
+                        </button>
+                        <div id="resultados">
+                            <h4 class="heeading h3" id="resultado-nombre-divisa"></h4>
+                            <h4 class="heeading h4"> Valor: <span id="resultado-valor-divisa"></span></h4>
+                            <h4 class="heeading h4"> Resultado de la Conversion</h4>
+                            <h4 class="heeading h2" id="resultado-conversion"> Resultado </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grafica">
+            <canvas id="myChart" width="800" height="522"></canvas>
+        </div>
+    </div>
+    <!-- Boomerang JS -->
+    <script rel="stylesheet" src="./assets/script.js"></script>
+    <!-- Principal JavaScript -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
